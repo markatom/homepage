@@ -1,0 +1,153 @@
+html,
+body {
+    color: #1a1a1a;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+div.left {
+    padding: 40px;
+    background-color: #1a1a1a;
+}
+
+div.logo {
+    margin: 0 auto;
+    width: 215px;
+    height: 173px;
+    background-image: url("sprite.png");
+}
+
+div.text {
+    padding: 40px;
+    text-align: center;
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 0 0 12px 0;
+    font-weight: 700;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #8e0020;
+}
+
+ul {
+    height: 42px;
+    margin: 24px auto;
+    padding: 0;
+    width: 311px;
+}
+
+li {
+    float: left;
+    list-style-type: none;
+    margin: 0 18px;
+}
+
+li a {
+    display: block;
+    height: 42px;
+    background-image: url("sprite.png");
+}
+
+li a:hover {
+    background-position-y: -215px;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+a.facebook {
+    width: 20px;
+    background-position: 0 -173px;
+}
+
+a.twitter {
+    width: 52px;
+    background-position: -20px -173px;
+}
+
+a.github {
+    width: 51px;
+    background-position: -72px -173px;
+}
+
+a.linkedin {
+    width: 44px;
+    background-position: -123px -173px;
+}
+
+a.facebook:hover {
+    background-position: 0 -215px;
+}
+
+a.twitter:hover {
+    background-position: -20px -215px;
+}
+
+a.github:hover {
+    background-position: -72px -215px;
+}
+
+a.linkedin:hover {
+    background-position: -123px -215px;
+}
+
+/************ TOUCH ************/
+
+.touch a {
+    text-decoration: underline;
+}
+
+/************ DESKTOP ************/
+
+@media (min-width: 1000px) {
+
+    html,
+    body {
+        display: table;
+    }
+
+    div.row {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    div.left,
+    div.right {
+        padding: 0;
+        width: 50%;
+        float: left;
+    }
+
+    div.logo {
+        float: right;
+        margin: 83px;
+    }
+
+    div.text {
+        padding: 0;
+        text-align: left;
+        margin: 67px 83px;
+    }
+
+    ul {
+        margin: 24px 0 24px -18px;
+    }
+
+}
